@@ -11,134 +11,84 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body{
+            background-color: #fec007;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fec007;
+        }
+
+        details{
+            align-items: center;
+        }
+
+        .card{
+            align-items: center;
+            width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin: 0 auto;
+        }
+
+        input[type="text"]{
+            width: 340px;
+        }
+
+        input[type="checkbox"] {
+            accent-color: #fec007;
+        }
+
+        button{
+            width: 340px;
+        }
+
+        hr{
+            width: 340px;
+        }
+
+        a{
+            margin: 50px;
+        }
+    </style>
+
 </head>
 <body>
 
-    <div class="whole d-flex align-text-stretch bg-warning p-2">
 
-        <!-- COLUMN 1 -->
-        <div class="first bg-dark text-light p-4">
-            <img src="logogogogogogogo-removebg-preview.png">
-            <ul class="nav flex-column">    
-                <li>Dashboard</li>
-                <li>Virtual Notebooks</li>
-                <li>Tasks</li>
-                <li>Profile</li>
-                <li>Logout</li>
-            </ul>
-        </div>
+    <div class="container">
+        <div class="card">
+            <img src="logogogogogogogo-removebg-preview.png" alt="School Logo">
+            <h1 class="text-dark">Hogwarts Account Login</h1>
 
-        <!-- COLUMN 2 -->
-        <div class="second bg-dark text-light p-4">
-            <h2>Studies</h2>
-            <p>Select a subject</p>
-        </div>
+            <button type="button" class="btn btn-sm btn-outline-warning mb-1 center" 
+            onclick="alert('To log in, enter Username: wingardium & Password: leviosa')">View Login Help</button>
+            <hr>
 
-        <!-- COLUMN 3 -->
-        <div class="third p-4">
+            <label class="text-dark">Username</h3>
+            <input type="text" class="form-control" id="usernameEntry">
+            <br>
+            <label class="text-dark">Password</h3>
+            <input type="text" class="form-control" id="passwordEntry">
 
-            <div class="row gap-3">
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Potions</h2>
-                    <img class="card-img-top" style="width:5%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-                
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Charms</h2>
-                    <img class="card-img-top" style="width:100%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
+            <input type="checkbox" class="mt-4">
+            <label>Stay logged in?</label><br>
+            <p class="mb-4"><i>Your session will stay active on this device.</i></p>
 
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Divination</h2>
-                    <img class="card-img-top" style="width:100%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row gap-3">
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Potions</h2>
-                    <img class="card-img-top" style="width:5%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-                
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Charms</h2>
-                    <img class="card-img-top" style="width:100%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Divination</h2>
-                    <img class="card-img-top" style="width:100%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row gap-3">
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Potions</h2>
-                    <img class="card-img-top" style="width:5%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-                
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Charms</h2>
-                    <img class="card-img-top" style="width:100%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-
-                <div class="card mt-3 p-3 display-flex">
-                    <h2>Divination</h2>
-                    <img class="card-img-top" style="width:100%">
-                    <div class="card-body">
-                        <h5 class="card-title">Ravenclaw</h5>
-                        <p class="card-text">Teacher</p>
-                        <button class="btn btn-warning"></button>
-                    </div>
-                </div>
-            </div>
+            <p id="result" class="text-muted mt-2"></p>
+            <button type="button" class="btn btn-warning" onclick="loginUser()">Log In</button>
         
+            <hr>
+            <u>Forgot password?</u>
         </div>
     </div>
-    
-    
-
-
 
 <script src="main.js"></script>
 </body>
